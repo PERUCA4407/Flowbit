@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - IA Services</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <h1>IA Services</h1>
+                    </div>
+                    <div class="nav-menu" id="nav-menu">
+                        <a href="home.html" class="nav-link active">Home</a>
+                        <a href="servicos.html" class="nav-link">Serviços</a>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="dropdown">
+                            <button class="dropbtn" id="profile-btn">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class="dropdown-content" id="dropdown-content">
+                                <a href="#" id="profile-link">Perfil</a>
+                                <a href="#" id="settings-link">Configurações</a>
+                            </div>
+                        </div>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="hamburger" id="hamburger" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Transforme seu negócio com Inteligência Artificial</h1>
+                        <p class="hero-subtitle">Soluções inovadoras e personalizadas para impulsionar seu crescimento e eficiência.</p>
+                        <a href="contato.html" class="cta-button">Entre em Contato</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/hero-image.svg" alt="Ilustração de IA" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <div class="container">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Consultoria em IA</h3>
+                            <p>Auxiliamos na implementação de soluções de inteligência artificial personalizadas para seu negócio.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Análise de Dados</h3>
+                            <p>Transformamos seus dados em insights valiosos para tomada de decisões estratégicas.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Automação de Processos</h3>
+                            <p>Otimize seus processos com automação inteligente, reduzindo custos e aumentando eficiência.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Segurança Digital</h3>
+                            <p>Proteja seus dados e sistemas com soluções avançadas de segurança baseadas em IA.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Aplicativos Inteligentes</h3>
+                            <p>Desenvolvemos apps móveis e web com integração de IA para experiências inovadoras.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Treinamento e Capacitação</h3>
+                            <p>Capacite sua equipe com treinamentos especializados em tecnologias de IA.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 IA Services. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <!-- Modal de Perfil -->
+        <div id="profile-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-profile">&times;</span>
+                <h2>Perfil do Usuário</h2>
+                <p>Bem-vindo! Esta é uma área para informações do perfil. Funcionalidade completa em desenvolvimento.</p>
+            </div>
+        </div>
+        <!-- Modal de Configurações -->
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-settings">&times;</span>
+                <h2>Configurações</h2>
+                <div class="settings-option">
+                    <label for="theme-select">Tema:</label>
+                    <select id="theme-select">
+                        <option value="light">Claro</option>
+                        <option value="dark">Escuro</option>
+                    </select>
+                </div>
+                <div class="settings-option">
+                    <label for="language-select">Idioma:</label>
+                    <select id="language-select">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

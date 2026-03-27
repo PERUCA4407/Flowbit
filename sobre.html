@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre - IA Services</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <h1>IA Services</h1>
+                    </div>
+                    <div class="nav-menu" id="nav-menu">
+                        <a href="home.html" class="nav-link">Home</a>
+                        <a href="servicos.html" class="nav-link">Serviços</a>
+                        <a href="sobre.html" class="nav-link active">Sobre</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="dropdown">
+                            <button class="dropbtn" id="profile-btn">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class="dropdown-content" id="dropdown-content">
+                                <a href="#" id="profile-link">Perfil</a>
+                                <a href="#" id="settings-link">Configurações</a>
+                            </div>
+                        </div>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="hamburger" id="hamburger" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2 class="section-title">Sobre Nós</h2>
+                            <p>Somos especialistas em inteligência artificial, dedicados a ajudar empresas a se adaptarem às novas tecnologias. Com anos de experiência, oferecemos soluções personalizadas que combinam inovação, eficiência e resultados mensuráveis.</p>
+                            <p>Nossa missão é democratizar o acesso à IA, tornando-a acessível e benéfica para negócios de todos os portes. Trabalhamos em estreita colaboração com nossos clientes para entender suas necessidades e desenvolver soluções que realmente fazem a diferença.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="assets/about-image.svg" alt="Equipe trabalhando" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 IA Services. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <!-- Modal de Perfil -->
+        <div id="profile-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-profile">&times;</span>
+                <h2>Perfil do Usuário</h2>
+                <p>Bem-vindo! Esta é uma área para informações do perfil. Funcionalidade completa em desenvolvimento.</p>
+            </div>
+        </div>
+        <!-- Modal de Configurações -->
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-settings">&times;</span>
+                <h2>Configurações</h2>
+                <div class="settings-option">
+                    <label for="theme-select">Tema:</label>
+                    <select id="theme-select">
+                        <option value="light">Claro</option>
+                        <option value="dark">Escuro</option>
+                    </select>
+                </div>
+                <div class="settings-option">
+                    <label for="language-select">Idioma:</label>
+                    <select id="language-select">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
